@@ -6,36 +6,33 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<title>GastekPizza</title>
 </head>
 
 <body>
-	<section>
-		<div class="logo-container">
-			<a href="/index.html" class="logo">GastekPizza</a>
-		</div>
+	<div class="logo-container">
+		<a href="/index.html" class="logo">GastekPizza</a>
+	</div>
+	<form class="formulario">
+		<h1>Login</h1>
 		
-		<div class="form-container">
-			<h1>Iniciar sesión</h1>
-			<form action="#">
-				<div class="control">
-					<label for="name">Usuario</label>
-					<input type="text" name="name" id="name">
-				</div>
-				<div class="control">
-					<label for="psw">Contraseña</label>
-					<input type="password" name="psw" id="psw">
-				</div>
-				<span><input type="checkbox"> Recordar contraseña</span>
-				<div class="control">
-					<input type="submit" value="Login">
-				</div>
-			</form>
-			<div class="link">
-				<a href="/register.html">Registrate si no tenes cuenta</a>
+
+			<div class="input-contenedor">
+				<i class="fas fa-envelope icon"></i>
+				<input type="text" placeholder="Correo Electronico">
 			</div>
+
+			<div class="input-contenedor">
+				<i class="fas fa-key icon"></i>
+				<input type="password" placeholder="Contraseña">
+			</div>
+
+			<input type="submit" value="Login" class="button">
+			<p>Al registrarte, aceptas nuestras condiciones de uso y políticas de privacidad</p>
+			<p>¿No tenes cuenta? <a class="link" href="register.html">Registrate</a></p>
 		</div>
-	</section>
+	</form>
 </body>
 
 </html>

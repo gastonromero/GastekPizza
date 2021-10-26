@@ -2,10 +2,10 @@
 
 
 :root {
-    --main-xiketic:#03071e;
+    --main-xiketic:#000105;
     --main-dark-sienna:#370617;
     --main-rosewood:#6a040f;
-    --main-dark-red:#9d0208;
+    --main-dark-red:#810307;
     --main-vermillon:#d00000;
     --main-persimmon:#e85d04;
     --main-carrot-orange:#f48c06;
@@ -33,6 +33,7 @@ html{
 
 section {
     padding: 2rem 9%;
+    background-color: var(--main-xiketic);
 }
 
 .heading{
@@ -41,26 +42,26 @@ section {
    color: #333;
    padding: 1rem;
    margin: 2rem 0;
-   background: rgba(255, 51, 153,.05); 
+   background: rgba(255, 207, 51, 0.151); 
 }
 
 .heading span{
-    color:pink;
+    color:var(--main-carrot-orange);
 }
 
 .btn{
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background-color: #333;
-    color:#fff;
+    background-color: var(--main-xiketic);
+    color:rgb(255, 255, 255);
     padding: .9rem 3.5rem;
     cursor: pointer;
     font-size: 1.7rem;
 }
 
 .btn:hover{
-    background: pink;
+    background: var(--main-selective-yellow);
 }
 
 header{
@@ -68,7 +69,7 @@ header{
     top:0; 
     left: 0;
     right: 0%;
-    background: #fff;
+    background: var(--main-xiketic);
     padding: 2rem 9%;
     display: flex;
     align-items: center;
@@ -79,32 +80,28 @@ header{
 
 header .logo{
     font-size: 3rem;
-    color:#333;
+    color:var(--main-dark-red);
     font-weight: bolder;
-}
-
-header .logo span{
-    color: pink;
 }
 
 header .navbar a{
     font-size: 2rem;
     padding: 0 1.5rem;
-    color:#666;
+    color:var(--main-dark-red);
 }
 
 header .navbar a:hover{
-    color: pink;
+    color: var(--main-selective-yellow);
 }
 
 header .icons a{
     font-size: 2.5rem;
-    color: #333;
+    color: var(--main-dark-red);
     margin-left: 1.5rem;
 }
 
 header .icons a:hover{
-    color: pink;
+    color: var(--main-selective-yellow);
 }
 
 header #toggler{
@@ -136,19 +133,19 @@ header .fa-bars{
 
 .home .content h3{
     font-size: 6rem;
-    color:#333;
+    color:var(--main-orange-web);
 }
 
 .home .content span{
     font-size: 3.5rem;
-    color: pink;
+    color: var(--main-orange-web);
     padding: 1rem 0;
     line-height: 1.5;
 }
 
 .home .content p{
     font-size: 1.5rem;
-    color: #999;
+    color: var(--main-xiketic);
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -193,7 +190,7 @@ header .fa-bars{
 
 .about .row .content h3{
     font-size: 3rem;
-    color: #333;
+    color: var(--main-xiketic);
 }
 
 .about .row .content p{

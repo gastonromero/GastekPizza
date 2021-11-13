@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-
-
-:root {
+/* :root {
     --main-xiketic:#000105;
     --main-dark-sienna:#370617;
     --main-rosewood:#6a040f;
@@ -11,6 +11,14 @@
     --main-carrot-orange:#f48c06;
     --main-orange-web:#faa307;
     --main-selective-yellow:#faa307;
+} */
+
+:root {
+    --dark-olive: #1d1d1d;
+    --red-ketchup: #cc0417;
+    --orange-cheddar: #c95729;
+    --yellow-cheese: #f9ad03;
+    --white-flour: #ececec;
 }
 
 *{
@@ -22,6 +30,7 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
@@ -31,9 +40,9 @@ html{
     overflow-x: hidden;
 }
 
-section {
+section{
     padding: 2rem 9%;
-    background-color: var(--main-xiketic);
+    background-image: url('/assets/backgroundPizza.png');
 }
 
 .heading{
@@ -42,66 +51,92 @@ section {
    color: #333;
    padding: 1rem;
    margin: 2rem 0;
-   background: rgba(255, 207, 51, 0.151); 
+   background: #ececec9d; 
 }
 
 .heading span{
     color:var(--main-carrot-orange);
 }
 
-.btn{
-    display: inline-block;
-    margin-top: 1rem;
-    border-radius: 5rem;
-    background-color: var(--main-xiketic);
-    color:rgb(255, 255, 255);
-    padding: .9rem 3.5rem;
-    cursor: pointer;
-    font-size: 1.7rem;
+.comprar-container {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0 0);
+    background-color: var(--red-ketchup);
+    height: 40px;
+    width: 180px;
+    position: absolute;
+    display: flex;
+    align-items: center;
 }
 
-.btn:hover{
-    background: var(--main-selective-yellow);
+.comprar-container a{
+    display: flex;
+    cursor: pointer;
+    color: var(--white-flour);
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50px;
+}
+
+.comprar-container:hover, .btn:hover{
+    background: var(--white-flour);
+    color: var(--red-ketchup);
 }
 
 header{
     position:fixed;
+    background-color: #0000004a;
     top:0; 
     left: 0;
     right: 0%;
-    background: var(--main-xiketic);
     padding: 2rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.562);
+    color: var(--white-flour);
 }
 
 header .logo{
     font-size: 3rem;
-    color:var(--main-dark-red);
+    color: var(--white-flour);
     font-weight: bolder;
+    flex-grow: 0.5;
 }
 
 header .navbar a{
     font-size: 2rem;
     padding: 0 1.5rem;
-    color:var(--main-dark-red);
+    color:var(--white-flour);
+    font-weight: bold;
 }
 
 header .navbar a:hover{
-    color: var(--main-selective-yellow);
+    color: var(--red-ketchup);
 }
 
 header .icons a{
-    font-size: 2.5rem;
-    color: var(--main-dark-red);
+    font-size: 2rem;
+    color: var(--white-flour);
+    padding: 0 1.5rem;
     margin-left: 1.5rem;
 }
 
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .fa-heart:before {
+    margin: 0;
+}
+
 header .icons a:hover{
-    color: var(--main-selective-yellow);
+    color: var(--red-ketchup);
 }
 
 header #toggler{
@@ -122,7 +157,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(/assets/2.jpg) no-repeat;
+    background: url(/assets/pizzaDale.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -133,19 +168,23 @@ header .fa-bars{
 
 .home .content h3{
     font-size: 6rem;
-    color:var(--main-orange-web);
+    color:var(--white-flour);
+    font-family: 'Lobster', cursive;
 }
-
+#color-ketchup {
+    color: var(--red-ketchup);
+    font-size: 9rem;
+}
 .home .content span{
     font-size: 3.5rem;
-    color: var(--main-orange-web);
+    color: var(--white-flour);
     padding: 1rem 0;
     line-height: 1.5;
 }
 
 .home .content p{
     font-size: 1.5rem;
-    color: var(--main-xiketic);
+    color: var(--white-flour);
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -441,6 +480,7 @@ header .fa-bars{
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
+    background-color: white;
 }
 
 .footer .box-container .box{

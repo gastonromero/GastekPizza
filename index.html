@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gastek Restaurant</title>
+    <link rel="icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/537688f399.js" crossorigin="anonymous"></script>
@@ -16,21 +17,30 @@
         <input type="checkbox" name="" id="toggler">
         <label for="toggler" class="fas fa-bars"></label>
 
-        <nav class="navbar">
+        <nav class="navbar-desktop">
             <a href="#home">Home</a>
             <a href="#about">Sobre mi</a>
             <a href="#products">Menú</a>
             <a href="#review">Opina</a>
         </nav>
 
-        <a href="/index.html" class="logo">GastekPizza</a>
+        <nav class="navbar">
+            <a href="/login.html">Perfil</a>
+            <a href="#home">Favoritos</a>
+            <a href="#home">Mi carro</a>
+            <a href="#about">Sobre mi</a>
+            <a href="#products">Menú</a>
+            <a href="#review">Opina</a>
+        </nav>
 
-        <div class="icons">
+        <a href="/index.html" class="logo"><img src="/assets/GastekPizzaLogo.png" alt=""></a>
+
+        <div class="icons-header">
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-shopping-cart"></a>
             <a href="/login.html" class="fas fa-user"></a>
         </div>
-        
+
     </header>
 
     <section class="home" id="home">
@@ -41,13 +51,13 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores nostrum et nam. Earum dolorem velit
                 deleniti reprehenderit recusandae architecto. Quam.</p>
             <div class="comprar-container">
-                <a href="#" class="btn">Comprar</a>
+                <a href="#">Comprar</a>
             </div>
         </div>
     </section>
 
     <section class="about" id="about">
-        <h1 class="heading"><span> Sobre </span> Mi </h1>
+        <h2 class="heading"><span> Sobre </span> Mi </h2>
         <div class="row">
             <div class="video-container">
                 <video src="/assets/vidio.mp4" loop autoplay muted></video>
@@ -68,34 +78,176 @@
 
     </section>
 
+    <section class="products-container" id="products">
+
+        <h2 class="heading"><span> Nuestras </span> Pizzas </h2>
+
+
+            <div class="box-products">
+
+                <div class="box-img">
+                    <span class="price">$100 -25%</span>
+                    <img src="/assets/5.jpg" alt="">
+                    <h3>Pizza Margarita</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="button-order">Comprar</a>
+                </div>
+    
+                <div class="box-img">
+                    <span class="price">$100 -25%</span>
+                    <img src="/assets/6.jpg" alt="">
+                    <h3>Pizza Napolitana</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="button-order">Comprar</a>
+                </div>
+    
+                <div class="box-img">
+                    <span class="price">$100 -25%</span>
+                    <img src="/assets/7.jpg" alt="">
+                    <h3>Pizza cuatro quesos</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="button-order">Comprar</a>
+                </div>
+    
+                <div class="box-img">
+                    <span class="price">$100 -25%</span>
+                    <img src="/assets/8.jpg" alt="">
+                    <h3>Pizza carbonara</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="button-order">Comprar</a>
+                </div>
+    
+                <div class="box-img">
+                    <span class="price">$100 -25%</span>
+                    <img src="/assets/9.jpg" alt="">
+                    <h3>Pizza cuatro estaciones</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="button-order">Comprar</a>
+                </div>
+    
+                <div class="box-img">
+                    <span class="price">$100 -25%</span>
+                    <img src="/assets/10.jpg" alt="">
+                    <h3>Pizza Calzone</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="button-order">Comprar</a>
+                </div>
+    
+                <div class="box-img">
+                    <span class="price">$100 -25%</span>
+                    <img src="/assets/11.jpg" alt="">
+                    <h3>Pizza Barbacoa</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="button-order">Comprar</a>
+                </div>
+    
+                <div class="box-img">
+                    <span class="price">$100 -25%</span>
+                    <img src="/assets/12.jpg" alt="">
+                    <h3>Pizza Davola</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="button-order">Comprar</a>
+                </div>
+
+                <div class="box-img">
+                    <span class="price">$100 -25%</span>
+                    <img src="/assets/12.jpg" alt="">
+                    <h3>Pizza Davola</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <a href="#" class="button-order">Comprar</a>
+                </div>
+                
+            </div>
+
+
+
+    </section>
+
     <section class="icons-container">
 
-        <div class="icons">
-            <img src="/assets/icon-1.png" alt="">
+        <div class="icons-info">
+            <div class="">
+                <i class="fas fa-truck"></i>
+            </div>
+    
             <div class="info">
                 <h3>Delivery gratis</h3>
                 <span>para todo berazategui</span>
             </div>
         </div>
 
-        <div class="icons">
-            <img src="/assets/icon-2.png" alt="">
+        <div class="icons-info">
+            <i class="fas fa-hand-holding-usd"></i>
             <div class="info">
-                <h3>Descuentos en efectivo</h3>
-                <span>si no te gusta te devolvemos el dinero</span>
+                <h3>Descuentos</h3>
+                <span>Pagando en efectivo</span>
             </div>
         </div>
 
-        <div class="icons">
-            <img src="/assets/icon-3.png" alt="">
+        <div class="icons-info">
+            <i class="fas fa-surprise"></i>
             <div class="info">
                 <h3>Ofertas</h3>
                 <span>en todos los pedidos</span>
             </div>
         </div>
 
-        <div class="icons">
-            <img src="/assets/icon-4.png" alt="">
+        <div class="icons-info">
+            <i class="far fa-credit-card"></i>
             <div class="info">
                 <h3>Aceptamos tarjeta</h3>
                 <span>Uala y bitcoins</span>
@@ -104,179 +256,9 @@
 
     </section>
 
-    <section class="products" id="products">
-
-        <h1 class="heading"> Nuestras <span>pizzas</span></h1>
-
-        <div class="box-container">
-            <div class="box">
-                <span class="discount">-10%</span>
-                <div class="image">
-                    <img src="/assets/5.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">Comprar</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Pizza margarita</h3>
-                    <div class="price"> $250 <span>$300</span></div>
-                </div>
-            </div>
-
-            <div class="box">
-                <span class="discount">-10%</span>
-                <div class="image">
-                    <img src="/assets/6.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Pizza napolitana</h3>
-                    <div class="price"> $250 <span>$300</span></div>
-                </div>
-            </div>
-
-            <div class="box">
-                <span class="discount">-10%</span>
-                <div class="image">
-                    <img src="/assets/7.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Pizza cuatro quesos</h3>
-                    <div class="price"> $250 <span>$300</span></div>
-                </div>
-            </div>
-
-            <div class="box">
-                <span class="discount">-10%</span>
-                <div class="image">
-                    <img src="/assets/8.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Pizza carbonara</h3>
-                    <div class="price"> $250 <span>$300</span></div>
-                </div>
-            </div>
-
-            <div class="box">
-                <span class="discount">-10%</span>
-                <div class="image">
-                    <img src="/assets/9.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Pizza cuatro estaciones</h3>
-                    <div class="price"> $250 <span>$300</span></div>
-                </div>
-            </div>
-
-            <div class="box">
-                <span class="discount">-10%</span>
-                <div class="image">
-                    <img src="/assets/10.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Pizza calzone</h3>
-                    <div class="price"> $250 <span>$300</span></div>
-                </div>
-            </div>
-
-            <div class="box">
-                <span class="discount">-10%</span>
-                <div class="image">
-                    <img src="/assets/11.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Pizza barbacoa</h3>
-                    <div class="price"> $250 <span>$300</span></div>
-                </div>
-            </div>
-
-            <div class="box">
-                <span class="discount">-10%</span>
-                <div class="image">
-                    <img src="/assets/12.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Pizza davola</h3>
-                    <div class="price"> $250 <span>$300</span></div>
-                </div>
-            </div>
-
-            <div class="box">
-                <span class="discount">-10%</span>
-                <div class="image">
-                    <img src="/assets/13.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Pizza funghi</h3>
-                    <div class="price"> $250 <span>$300</span></div>
-                </div>
-            </div>
-
-
-            <div class="box">
-                <span class="discount">-10%</span>
-                <div class="image">
-                    <img src="/assets/14.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn"></a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Pizza funghi</h3>
-                    <div class="price"> $250 <span>$300</span></div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
     <section class="review" id="review">
 
-        <h1 class="heading"> Opiniones de <span>clientes</span> </h1>
+        <h2 class="heading"> Opiniones de <span>clientes</span> </h2>
 
         <div class="box-container">
 
@@ -349,7 +331,7 @@
 
     <section class="contact" id="contact">
 
-        <h1 class="heading"> <span> contactanos </span> </h1>
+        <h2 class="heading">Contactanos</h2>
 
         <div class="row">
 
@@ -358,18 +340,18 @@
                 <input type="email" placeholder="email" class="box">
                 <input type="number" placeholder="numero" class="box">
                 <textarea name="" class="box" placeholder="mensaje" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="enviar mensaje" class="btn">
+                <input type="submit" value="Enviar mensaje">
             </form>
 
             <div class="image">
-                <img src="/assets/pizzero.jpg" alt="">
+                <img src="/assets/PizzaLogo.png" alt="">
             </div>
 
         </div>
 
     </section>
 
-    <section class="footer">
+    <footer class="footer">
 
         <div class="box-container">
 
@@ -404,12 +386,12 @@
                 <a href="#">mumbai, india - 400104</a>
                 <img src="/assets/payment.png" alt="">
             </div>
-
+            
         </div>
+        <div class="credit"> created by <span> Gastek </span> | todos los derechos reservados </div>
 
-        <div class="credit"> created by <span> gastek </span> | todos los derechos reservados </div>
 
-    </section>
+    </footer>
 
 </body>
 

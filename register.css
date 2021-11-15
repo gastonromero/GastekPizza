@@ -1,66 +1,92 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
     margin: 0;
-   background: url(/assets/pizza.jpg);
+    padding: 0;
+}
+
+:root {
+    --dark-olive: #1d1d1d;
+    --red-ketchup: #cc0417;
+    --orange-cheddar: #c95729;
+    --yellow-cheese: #f9ad03;
+    --white-flour: #ececec;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    margin: 0;
+    background: url(/assets/pizzaback.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
-* {
-    box-sizing: border-box;
-}
-.contenedor{
-    width: 100%;
-    padding: 15px;
-}
+
 .formulario{
-    background: #fff;
-    margin-top: 150px;
-    padding: 3px;
+    background: rgba(0, 0, 0, 0.178);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    backdrop-filter: blur(2.5px);
 }
-h1{
+
+.login-title{
     text-align: center;
-    color: #1a2537;
-    font-size: 40px;
+    color: var(--yellow-cheese);
+    font-size: 3.5rem;
+    font-family: 'Lobster', cursive;
 }
-input[type="text"],
-input[type="password"]{
-    font-size: 20px;
-    width: 82%;
-    padding: 10px;
-    border: none;
-}
+
 .input-contenedor{
-    margin-bottom: 15px;
-    border: 1px solid #aaa;
+    margin: 25px;
+    width: 90%;
 }
-.icon{
-    min-width: 50px;
-    text-align: center;
-    color: #999;
+
+.input-contenedor input{
+    padding: 0.3rem;
+    width: 89%;
 }
+
+.input-contenedor i{
+    color: var(--red-ketchup);
+}
+
 .button{
+    margin-left: 2rem;
     border: none;
-    width: 100%;
+    width: 85%;
     color: white;
     font-size: 20px;
-    background:  #1a2537;
-    padding: 15px 20px;
+    background:  var(--red-ketchup);
+    padding: 0.5rem 1.5rem;
     border-radius: 5px;
     cursor: pointer;
 }
 .button:hover{
-    background: cadetblue;
+    background: var(--dark-olive);
 }
-p{
+
+.formulario p{
     text-align: center;
+    color: var(--white-flour);
+    font-size: 0.9rem;
+    padding: 1rem;
 }
 .link{
     text-decoration: none;
-      color: #1a2537;
+    color: var(--red-ketchup);
     font-weight: 600;
+    transition: all .6s ease-in-out;
 }
 .link:hover{
-     color: cadetblue;
+     color: var(--yellow-cheese);
 }
 
 .logo-container {
@@ -69,22 +95,63 @@ p{
 	left: 50.5rem;
 }
 
-.logo {
-	font-size: 3rem;
-    color:rgba(8, 8, 8, 0.815);
-    font-weight: bolder;
-	text-decoration: none;
+.logo img {
+    width: 10rem;
 }
 
+.cookie {
+     color: var(--white-flour);
+     margin: 2rem;
+   
+}
+
+@media(min-width:480px)
+{
+    
+}
 @media(min-width:768px)
 {
     .formulario{
-        margin: auto;
-        width: 500px;
-        margin-top: 150px;
-        border-radius: 2%;
+        width: 60%;
+    }
+
+    .input-contenedor{
+        margin: 2rem;
+    }
+    
+    .formulario p {
+        padding: 2rem;
+    }
+
+    .button{
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 1024px)
+{
+    .formulario{
+        width: 30%;
+    }
+
+    .cookie{
+        margin: 2rem 0 0 3.5rem;
+    }
+
+    .button{
+        margin-left: 1rem;
+    }
+    
+    .formulario p{
+        font-size: 1.2rem;
+    }
+    .registrate-link p, 
+    .registrate-link a{
+        font-size: 1.2rem;
     }
 }
+
 
 
 
